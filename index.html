@@ -1,0 +1,58 @@
+<h1>Personaliza tu Paquete Turístico</h1>
+        
+        <form action="resultados.php" method="POST">
+            
+            
+            <fieldset>
+                <legend>Datos</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez López">
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required placeholder="Ej. juan@correo.com">
+            </fieldset>
+
+           
+            <fieldset>
+                <legend>Destinos turísticos</legend>
+                <label for="destinos">Selecciona uno o varios destinos:</label>
+                <p class="nota">(Mantén presionada la tecla Ctrl en Windows o Cmd en Mac para seleccionar varios)</p>
+                <select name="destinos[]" id="destinos" multiple>
+                    <option value="Cancún">Cancún</option>
+                    <option value="Puerto Vallarta">Puerto Vallarta</option>
+                    <option value="Acapulco">Acapulco</option>
+                    <option value="Los Cabos">Los Cabos</option>
+                    <option value="Mazatlán">Mazatlán</option>
+                    <option value="Huatulco">Huatulco</option>
+                    <option value="Puerto Escondido">Puerto Escondido</option>
+                </select>
+            </fieldset>
+
+           
+            <fieldset>
+                <legend>Actividades turísticas</legend>
+                <label><input type="checkbox" name="actividades[]" value="Buceo"> Buceo</label>
+                <label><input type="checkbox" name="actividades[]" value="Paseo en lancha"> Paseo en lancha</label>
+                <label><input type="checkbox" name="actividades[]" value="Visita a zonas arqueológicas"> Visita a zonas arqueológicas</label>
+                <label><input type="checkbox" name="actividades[]" value="Senderismo"> Senderismo</label>
+                <label><input type="checkbox" name="actividades[]" value="Pesca deportiva"> Pesca deportiva</label>
+                <label><input type="checkbox" name="actividades[]" value="Recorrido gastronómico"> Recorrido gastronómico</label>
+                <label><input type="checkbox" name="actividades[]" value="Visita a museos"> Visita a museos</label>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Adicionales</legend>
+                <label><input type="checkbox" name="servicios[]" value="Transporte al aeropuerto"> Transporte al aeropuerto</label>
+                <label><input type="checkbox" name="servicios[]" value="Desayuno incluido"> Desayuno incluido</label>
+                <label><input type="checkbox" name="servicios[]" value="Hospedaje de lujo"> Hospedaje de lujo</label>
+                <label><input type="checkbox" name="servicios[]" value="Seguro de viajero"> Seguro de viajero</label>
+                <label><input type="checkbox" name="servicios[]" value="Renta de automóvil"> Renta de automóvil</label>
+                <label><input type="checkbox" name="servicios[]" value="Guía turístico"> Guía turístico</label>
+            </fieldset>
+
+            <button type="submit">Generar</button>
+        </form>
+    </div>
+</body>
+</html>
